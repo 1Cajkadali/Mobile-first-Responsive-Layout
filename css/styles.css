@@ -45,17 +45,119 @@ body {
 
 footer {
     background-color: whitesmoke;
+    width: 320px;
+    margin: auto;
 }
 
 .main-footer {
     max-width: 320px;
-    background-color: whitesmoke;
     padding: 10px;
     margin: auto;
     text-align: center;
 }
 
-.bottom {
+#bottom {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+}
+
+.content {
+    width: 80%;
+    margin: 10px auto 20px auto;
+}
+
+#backtotop {
+    text-decoration: none;
+    color: black;
+    align-self: flex-end;
+}
+
+.nav-bottom {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .main-content,
+    .main-header,
+    .main-footer {
+        min-width: 768px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .header-pic {
+        float: right;
+        max-width: 50%;
+        margin-left: 10px;
+        max-height: 300px;
+    }
+
+    .main-header {
+        text-align: left;
+    }
+
+    .group:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .marketing,
+    .search,
+    .travel,
+    .map,
+    .photo,
+    .calculator {
+        width: 46.5%;
+        height: 320px;
+    }
+
+    .marketing,
+    .travel,
+    .photo {
+        float: left;
+    }
+
+    .search,
+    .map,
+    .calculator {
+        float: right;
+    }
+
+    footer {
+        min-width: 768px;
+    }
+
+    .main-footer {
+        text-align: center;
+    }
+
+    #backtotop {
+        display: none;
+    }
+
+    .nav-bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style-type: none;
+
+    }
+
+    .nav-bottom a {
+        padding: 5px;
+        margin: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
+
+    .upbottom {
+        border-bottom: 1px solid gray;
+    }
 }
