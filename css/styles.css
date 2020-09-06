@@ -77,11 +77,21 @@ footer {
     display: none;
 }
 
+#h2 {
+    display: none;
+}
+
 @media screen and (min-width: 768px) {
-    .main-content,
     .main-header,
+    .main-content,
     .main-footer {
         min-width: 768px;
+    }
+
+    /* header styles */
+
+    .main-header h1 {
+        text-align: center;
     }
 
     .nav {
@@ -93,7 +103,7 @@ footer {
     .header-pic {
         float: right;
         max-width: 50%;
-        margin-left: 10px;
+        margin-left: 5px;
         max-height: 300px;
     }
 
@@ -101,12 +111,16 @@ footer {
         text-align: left;
     }
 
+    /* clearfix */
+
     .group:after {
         content: "";
         clear: both;
         display: table;
     }
 
+    /* main styles */
+    
     .marketing,
     .search,
     .travel,
@@ -114,20 +128,32 @@ footer {
     .photo,
     .calculator {
         width: 46.5%;
-        height: 320px;
+        height: 400px;
     }
 
     .marketing,
     .travel,
     .photo {
         float: left;
+        margin-right: 5px;
     }
 
     .search,
     .map,
     .calculator {
         float: right;
+        margin-left: 5px;
     }
+
+    .image {
+        max-width: 100%;
+    }
+
+    .container {
+        margin: auto;
+    }
+
+    /* footer styles */
 
     footer {
         min-width: 768px;
@@ -137,7 +163,7 @@ footer {
         text-align: center;
     }
 
-    #backtotop {
+    #bottom {
         display: none;
     }
 
@@ -159,5 +185,137 @@ footer {
 
     .upbottom {
         border-bottom: 1px solid gray;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 20px;
     }
+
+    .upbottom p {
+        padding: 10px;
+
+    }
+
+    #up-bottom-p {
+        padding: 30px 10px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .bottom-medium {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .main-content,
+    .main-header,
+    .main-footer {
+        min-width: 1024px;
+    }
+
+    /* main styles */
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background-color: white;
+    }
+
+
+    #home {
+        margin-right: 10px;
+    }
+
+    .image {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .marketing,
+    .search,
+    .travel,
+    .map,
+    .photo,
+    .calculator {
+        width: 31%;
+        height: 400px;
+    }
+
+    /* footer styles */
+
+    footer {
+        min-width: 1024px;
+    }
+
+    .main-footer {
+        text-align: center;
+    }
+
+
+    .bottom-medium {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+
+    .upbottom {
+        border-bottom: 1px solid gray;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: auto;
+        width: 60%;
+    }
+    
+    #portfolio {
+        background-color: white;
+        padding-top: 10px;
+        padding-left: 5px;
+    }
+
+    /* header styles */
+
+    .main-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style-type: none;
+
+    }
+
+    .main-nav a {
+        padding: 5px;
+        margin: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    #h2 {
+        display: inline-block;
+    }
+
+    #head-pic {
+        margin-right: 20px;
+
+    }
+    .header-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+
 }
