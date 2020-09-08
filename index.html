@@ -4,7 +4,7 @@
         <title>Mobile First</title>
         <meta name="viewport" content="width=320, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@400;700&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
             <header id="home" class="main-header clearfix">
@@ -14,6 +14,7 @@
                         <ul class="nav">
                             <li><a href="#home" id="navi">Home</a></li>
                             <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#skills">Skills</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
@@ -21,56 +22,68 @@
                 <img src="images/responsive-layout-profile.png" alt="header picture" class="header-pic" id="head-pic">
                 <p class="text-header">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
             </header>
-            <main id="portfolio">
-                <div class="portfolio clearfix">
+            <main>
+                <div class="portfolio clearfix" id="portfolio">
                     <h2>Portfolio</h2>
-                            <div class="marketing">
-                                <img src="images/portfolio-1.png" alt="marketing page" class="image">
-                                <h3>Marketing Page</h3>
-                                <p class="content">This project shows the front page if a marketing website meant for a specific business I'm interested in.</p>
-                            </div>
+                            <div class="port-first-row">
+                                <div class="marketing">
+                                    <img src="images/portfolio-1.png" alt="marketing page" class="image">
+                                    <h3>Marketing Page</h3>
+                                    <p class="content">This project shows the front page if a marketing website meant for a specific business I'm interested in.</p>
+                                </div>
 
-                            <div class="search">
-                                <img src="images/portfolio-2.png" alt="search page" class="image">
-                                <h3>Search Page</h3>
-                                <p class="content">This project searches through a specific database to find information that the user is trying to look up.</p>
-                            </div>
+                                <div class="search">
+                                    <img src="images/portfolio-2.png" alt="search page" class="image">
+                                    <h3>Search Page</h3>
+                                    <p class="content">This project searches through a specific database to find information that the user is trying to look up.</p>
+                                </div>
 
-                            <div class="travel">
-                                <img src="images/portfolio-3.png" alt="travel app" class="image">
-                                <h3>Travel App</h3>
-                                <p class="content">This project compares travel times based on different transportation methods and tells you the best one.</p>
+                                <div class="travel">
+                                    <img src="images/portfolio-3.png" alt="travel app" class="image">
+                                    <h3>Travel App</h3>
+                                    <p class="content">This project compares travel times based on different transportation methods and tells you the best one.</p>
+                                </div>
                             </div>
+                            <div class="port-second-row">
+                                <div class="map">
+                                    <img src="images/portfolio-4.png" alt="map of favorite spots" class="image">
+                                    <h3>Map of Favorite Spots</h3>
+                                    <p class="content">This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+                                </div>
 
-                            <div class="map">
-                                <img src="images/portfolio-4.png" alt="map of favorite spots" class="image">
-                                <h3>Map of Favorite Spots</h3>
-                                <p class="content">This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
-                            </div>
+                                <div class="photo">
+                                    <img src="images/portfolio-5.png" alt="photo gallery" class="image">
+                                    <h3>Photo Gallery</h3>
+                                    <p class="content">This project shows picture from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+                                </div>
 
-                            <div class="photo">
-                                <img src="images/portfolio-5.png" alt="photo gallery" class="image">
-                                <h3>Photo Gallery</h3>
-                                <p class="content">This project shows picture from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-                            </div>
-
-                            <div class="calculator">
-                                <img src="images/portfolio-6.png" alt="Calculator" class="image">
-                                <h3>Calculator</h3>
-                                <p class="content">Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+                                <div class="calculator">
+                                    <img src="images/portfolio-6.png" alt="Calculator" class="image">
+                                    <h3>Calculator</h3>
+                                    <p class="content">Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+                                </div>
                             </div>
                 </div>
+                <section class="skills" id="skills">
+                    <h3>Skills</h3>
+                        <p>One day I would like to work in tech company. That is why I am working on my skills. Such as:</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                </section>
             </main>
             <footer id="contact">
                 <div class="main-footer">
                     <div class="footer-upper">
                         <div class="footer-upper-content">
                             <div class="contact-and-p-footer">
-                        <h4>Contact</h4>
-                            <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+                                <h4>Contact</h4>
+                                    <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
                             </div>
-                            <p>Phone <strong>+1 (111) 555-1234</strong></p>
-                            <p>Email <strong>email@yoursite.com</strong></p>
+                                    <p>Phone <strong>+1 (111) 555-1234</strong></p>
+                                    <p>Email <strong>email@yoursite.com</strong></p>
                         </div>
                     </div>
                     <div class="mob-first-bottom clearfix">
@@ -82,6 +95,7 @@
                         <ul>
                             <li><a href="#home">Home</a></li>
                             <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#skills">Skills</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
