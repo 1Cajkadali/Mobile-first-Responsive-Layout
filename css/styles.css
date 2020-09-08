@@ -1,321 +1,49 @@
+/* Mobile-first */
 
+* {
+    box-sizing: border-box;
+}
 
 body {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-}
-.nav {
-    list-style-type: none;
-    display: block;
-    padding: 5px 10px;
-  }
-
-.main-content {
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
+    background-color: lightgrey;
 }
 
-.image {
-    max-width: 280px;
+/* header styles */
+
+header {
+    width: 320px;
+    background-color: whitesmoke;
+    text-align: center;
+    margin: 10px auto;
+    padding: 15px 0;
 }
 
 .header-pic {
-    max-width: 230px;
+    width: 70%;
+    margin: auto;
+}
+
+.nav {
+    list-style-type: none;
+    width: 90%;
+    padding: 10px 10px;
+    margin: 10px 15px;
 }
 
 .nav a {
-    background-color: white;
-    font-weight: bold;
-    padding: 10px 35px;
-    margin: 3px;
     display: block;
+    background-color: white;
     text-decoration: none;
     color: black;
-    max-width: 300px;
+    font-weight: bold;
+    margin: 5px;
+    padding: 10px 0px;
 }
 
-.main-header {
-    max-width: 320px;
-    background-color: whitesmoke;
-    padding: 20px;
-    margin: auto;
-    text-align: center;
-}
-
-footer {
-    background-color: whitesmoke;
-    width: 320px;
+.text-header {
+    width: 85%;
+    padding-bottom: 5px;
     margin: auto;
 }
 
-.main-footer {
-    max-width: 320px;
-    padding: 10px;
-    margin: auto;
-    text-align: center;
-}
-
-#bottom {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.content {
-    width: 80%;
-    margin: 10px auto 20px auto;
-}
-
-#backtotop {
-    text-decoration: none;
-    color: black;
-    align-self: flex-end;
-}
-
-.nav-bottom {
-    display: none;
-}
-
-#h2 {
-    display: none;
-}
-
-@media screen and (min-width: 768px) {
-    .main-header,
-    .main-content,
-    .main-footer {
-        min-width: 768px;
-    }
-
-    /* header styles */
-
-    .main-header h1 {
-        text-align: center;
-    }
-
-    .nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .header-pic {
-        float: right;
-        max-width: 50%;
-        margin-left: 5px;
-        max-height: 300px;
-    }
-
-    .main-header {
-        text-align: left;
-    }
-
-    /* clearfix */
-
-    .group:after {
-        content: "";
-        clear: both;
-        display: table;
-    }
-
-    /* main styles */
-    
-    .marketing,
-    .search,
-    .travel,
-    .map,
-    .photo,
-    .calculator {
-        width: 46.5%;
-        height: 400px;
-    }
-
-    .marketing,
-    .travel,
-    .photo {
-        float: left;
-        margin-right: 5px;
-    }
-
-    .search,
-    .map,
-    .calculator {
-        float: right;
-        margin-left: 5px;
-    }
-
-    .image {
-        max-width: 100%;
-    }
-
-    .container {
-        margin: auto;
-    }
-
-    /* footer styles */
-
-    footer {
-        min-width: 768px;
-    }
-
-    .main-footer {
-        text-align: center;
-    }
-
-    #bottom {
-        display: none;
-    }
-
-    .nav-bottom {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        list-style-type: none;
-
-    }
-
-    .nav-bottom a {
-        padding: 5px;
-        margin: 10px;
-        text-decoration: none;
-        font-weight: bold;
-        color: black;
-    }
-
-    .upbottom {
-        border-bottom: 1px solid gray;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-right: 20px;
-    }
-
-    .upbottom p {
-        padding: 10px;
-
-    }
-
-    #up-bottom-p {
-        padding: 30px 10px;
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .bottom-medium {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        list-style-type: none;
-    }
-
-}
-
-@media (min-width: 1024px) {
-    .main-content,
-    .main-header,
-    .main-footer {
-        min-width: 1024px;
-    }
-
-    /* main styles */
-
-    .container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        background-color: white;
-    }
-
-
-    #home {
-        margin-right: 10px;
-    }
-
-    .image {
-        max-width: 100%;
-        margin: auto;
-    }
-
-    .marketing,
-    .search,
-    .travel,
-    .map,
-    .photo,
-    .calculator {
-        width: 31%;
-        height: 400px;
-    }
-
-    /* footer styles */
-
-    footer {
-        min-width: 1024px;
-    }
-
-    .main-footer {
-        text-align: center;
-    }
-
-
-    .bottom-medium {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        list-style-type: none;
-    }
-
-    .upbottom {
-        border-bottom: 1px solid gray;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        margin: auto;
-        width: 60%;
-    }
-    
-    #portfolio {
-        background-color: white;
-        padding-top: 10px;
-        padding-left: 5px;
-    }
-
-    /* header styles */
-
-    .main-nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        list-style-type: none;
-
-    }
-
-    .main-nav a {
-        padding: 5px;
-        margin: 10px;
-        text-decoration: none;
-        font-weight: bold;
-        color: black;
-    }
-
-    h1 {
-        display: none;
-    }
-
-    #h2 {
-        display: inline-block;
-    }
-
-    #head-pic {
-        margin-right: 20px;
-
-    }
-    .header-nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        list-style-type: none;
-    }
-
-}
+/* main styles */
