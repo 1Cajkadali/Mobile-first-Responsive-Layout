@@ -127,9 +127,10 @@ h1 {
 
 /* TABLET styles 768px */
 
-/* header styles */
-
 @media (min-width: 768px) {
+
+    /* header styles */
+
     header {
         width: 768px;
         margin: auto;
@@ -256,4 +257,106 @@ h1 {
     }
     }
 
-    @media (min-width: 1024px)
+/* DESKTOP 1024 styles */
+
+
+    @media (min-width: 1024px) {
+
+        /* header styles */
+
+        header {
+            width: 1024px;
+        }
+
+        #desktop-h1-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .main-nav {
+            width: 40%;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        h1 {
+            margin: 0 10px 0 20px;
+        }
+
+        .text-header {
+            width: 53%;
+            font-size: 20px;
+        }
+
+        .header-pic {
+            width: 47%;
+            height: 300px;
+        }
+
+        /* main styles */ 
+
+        .portfolio {
+            width: 1024px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        
+     /*   .marketing,
+        .search,
+        .travel,
+        .map,
+        .photo,
+        .calculator {
+            width: 32.5%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin: 2px;
+        } */
+
+        .image {
+            height: 194px;
+        }
+
+        .marketing,
+        .travel,
+        .photo {
+            width: 32.5%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin: 2px;
+            flex-wrap: wrap;
+            padding: 1px;
+        } 
+
+        .search,
+        .map,
+        .calculator {
+            width: 32.5%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin: 2px;
+            flex-wrap: wrap;
+            padding: 1px;
+        } 
+
+    /* footer styles */
+        .main-footer {
+            width: 1024px;
+            padding-bottom: 5px;
+        }
+
+        .footer-upper {
+            padding-bottom: 60px;
+        }
+
+        .contact-and-p-footer {
+            padding-bottom: 10px;
+        }
+
+    }
