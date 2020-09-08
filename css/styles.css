@@ -6,6 +6,7 @@
 
 body {
     background-color: lightgrey;
+    font-family: 'Quicksand', sans-serif;
 }
 
 /* header styles */
@@ -14,7 +15,7 @@ header {
     width: 320px;
     background-color: whitesmoke;
     text-align: center;
-    margin: 10px auto;
+    margin: 5px auto 0 auto;
     padding: 15px 0;
 }
 
@@ -23,14 +24,14 @@ header {
     margin: auto;
 }
 
-.nav {
+.main-nav {
     list-style-type: none;
     width: 90%;
     padding: 10px 10px;
-    margin: 10px 15px;
+    margin: 5px 15px;
 }
 
-.nav a {
+.main-nav li {
     display: block;
     background-color: white;
     text-decoration: none;
@@ -38,12 +39,118 @@ header {
     font-weight: bold;
     margin: 5px;
     padding: 10px 0px;
+    list-style-type: none;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav {
+    list-style-type: none;
+    width: 90%;
+    padding: 10px 10px;
+    margin: 0 15px;
 }
 
 .text-header {
     width: 85%;
+    padding-top: 5px;
     padding-bottom: 5px;
     margin: auto;
 }
 
+h1 {
+    margin-bottom: 2px;
+}
+
+
 /* main styles */
+
+.portfolio {
+    width: 320px;
+    background-color: white;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.image {
+    width: 90%;
+}
+
+.content {
+    width: 80%;
+    margin:  2px auto 15px auto;
+}
+
+/* footer styles */
+
+.main-footer {
+    width: 320px;
+    background-color: whitesmoke;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.tablet-bottom {
+    display: none;
+}
+
+.mob-first-bottom {
+    border-top: 1px solid lightgrey;
+    width: 90%;
+    margin: auto;
+}
+
+#mob-first-h4 {
+    float: left;
+}
+
+#backtotop {
+    float: right;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 7px;
+}
+
+/* clearfix */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/* TABLET styles 768px */
+
+/* header styles */
+
+@media (min-width: 768px) {
+    header {
+        width: 768px;
+    }
+
+    .header-pic {
+        float: right;
+        width: 50%;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .text-header {
+        width: 75%;
+        text-align: left;
+        margin-left: 15px;
+    }
+
+    .main-nav li, a {
+        display: inline;
+        padding: 0;
+        margin: 0;
+
+    }
+}
